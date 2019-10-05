@@ -1,0 +1,12 @@
+name = "Kanvas"
+license = "MIT"
+licenselink = "https://github.com/chick-p/hugo-theme-kanvas/blob/master/LICENSE"
+description = "Kanvas is a simple blog theme for Hugo."
+homepage = "https://github.com/chick-p/hugo-theme-kanvas/"
+tags = ["blog","responsive","minimal"]
+features = ["blog", "tags"]
+min_version = "0.58"
+
+[author]
+  name = "chick-p"
+  homepage = "https://blog.chick-p.work"
