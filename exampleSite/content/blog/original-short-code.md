@@ -13,23 +13,24 @@ tags:
 This shortcode is an admonition paragraph draws the reader's attention.
 
 {{< highlight go "linenos=table" >}}
-{{</* note type="information" */>}}
-{{</* /note */>}}
+{{%/* note type="information" */%}}
+comment
+{{%/* /note */%}}
 {{< /highlight >}}
 
 **Example:**
-{{< note type="information" >}}
+{{% note type="information" %}}
 Here are the built-in admonition types:
 
 - information
 - tips
 - warning
-{{< /note >}}
+{{% /note %}}
 
 ## image
 This shortcode is to show a image file.
 {{< highlight go "linenos=table" >}}
-{{%/* img src="cat.jpg"  width="600" height="auto" alt="sample image" */%}}
+{{</* img src="cat.jpg"  width="600" height="auto" alt="sample image" */>}}
 {{< /highlight >}}
 
 The image file is seeked in same directory with `_index.md` of article.
@@ -56,4 +57,4 @@ If not found in same directory, is seeked in directory of `static`.
 {{< /highlight >}}
 
 **Example:**
-{{% img src="../cat.jpg" width="600" height="auto" alt="sample image" %}}
+{{< img src="../cat.jpg"  width="600" height="auto" alt="sample image" >}}
