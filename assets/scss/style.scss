@@ -1,0 +1,25 @@
+// Web Font
+@import url('https://fonts.googleapis.com/earlyaccess/notosansjp.css');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+// Foundation
+@import "foundation/ress";
+@import "foundation/variables";
+@import "foundation/mixin";
+@import "foundation/color";
+@import "foundation/base";
+
+// Layout
+@import "layout/footer";
+@import "layout/header";
+@import "layout/main";
+
+// Component
+@import "object/component/note";
+
+// Project
+@import "object/project/list";
+@import "object/project/post";
+@import "object/project/author";
+@import "object/project/related";
+@import "object/project/pagenation"

@@ -1,0 +1,12 @@
+{{ with .Params.tags }}
+<div class="p-post__meta tags">
+  <ul>
+    <i class="fas fa-tags"></i>
+    {{ range . }}
+      <li>
+        <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}/" rel="tag">{{ . }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

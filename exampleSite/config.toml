@@ -1,0 +1,58 @@
+baseURL = "https://hugo-theme-kanvas.netlify.com/"
+title = "HUGO Theme Kanvas"
+paginate = 10
+languageCode = "ja"
+themesDir = "../.."
+theme = "hugo-theme-kanvas"
+
+hasCJKLanguage = true
+summaryLength = 50
+
+pygmentscodefences = true
+pygmentsCodeFencesGuessSyntax = true
+pygmentsStyle = "monokai"
+pygmentsoptions = "linenos=inline"
+
+[author]
+  name = "chick-p"
+
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  weight = 10
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[Params]
+  title = "HUGO Theme Kanvas"
+  dateformat = "2006年01月02日"
+  copyright = "Copyright 2019, chick-p and the Hugo Authors; all rights reserved."
+  postMeta = ["categories", "tags"]
+  defaultThumbnail = "/defaultThumbnail.png"
+  releted = true
+  twitterCards = true
+  customCSS = []
+  images = ["defaultThumbnail.png"]
+  description = "Kanvas is a simple blog theme for Hugo."
+
+[Params.social]
+  twitter = "_chick_p"
+  github = "chick-p"
+
+[outputFormats.rss]
+  baseName = "atom"

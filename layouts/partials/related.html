@@ -1,0 +1,21 @@
+<aside>
+  {{ $related := .Site.RegularPages.Related . | first 5 }}
+  {{ with $related }}
+
+  <div class="p-related">
+    <h2 class="p-related__title">Related posts</h2>
+      {{ range . }}
+      <div class="p-related__item">
+        <a href="{{ .RelPermalink }}">
+          <h3>{{ .Title }}</h3>
+          <p>
+            <i class="far fa-clock"></i>
+            {{ .Date.Format ( .Site.Params.dateformat | default "2006-01-02") }}
+          </p>
+          <p>{{ .Summary | plainify | truncate 100 }}</p>
+        </a>
+      </div>
+      {{ end }}
+  </div>
+  {{ end }}
+</aside>

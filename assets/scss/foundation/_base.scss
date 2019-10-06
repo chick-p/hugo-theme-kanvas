@@ -1,0 +1,22 @@
+// _base.scss
+
+body {
+  font-family: Quicksand, 'M PLUS Rounded 1c', 'Noto Sans JP';
+  color: $base-color;
+  font-size: 1em;
+}
+
+a {
+  color: $base-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: $primary;
+  }
+  &:visited {
+    color: $base-color;
+  }
+  &:active {
+    color: $base-color;
+  }
+}

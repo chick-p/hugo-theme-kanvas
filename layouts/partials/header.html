@@ -1,0 +1,17 @@
+<header class="l-header">
+  <div class="l-header__title">
+    <a href="{{ "" | relLangURL }}">
+      {{ .Site.Title }}
+    </a>
+  </div>
+  <div id="menu">
+    <ul>
+      {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+  <div id="menu-background"></div>
+</header>

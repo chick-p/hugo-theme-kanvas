@@ -1,0 +1,17 @@
+// _main.scss
+
+.l-main {
+  margin: 0 30px;
+  padding: 60px 60px;
+
+  @include tablet {
+    margin: 0 20px;
+    padding: 20px;
+  };
+}
+
+.l-main__warning {
+  padding: 20px 10px;
+  text-align: center;
+  border: 1px solid $light-grey;
+}

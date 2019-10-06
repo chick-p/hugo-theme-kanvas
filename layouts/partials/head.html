@@ -1,0 +1,35 @@
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ hugo.Generator }}
+  <title>
+    {{ if .IsHome }}{{ .Site.Title }}
+    {{ else }}{{ block "title" . }}{{ .Title }}{{ end }} | {{ .Site.Title }}
+    {{ end }}
+  </title>
+
+  {{ if not .Site.IsServer }}
+    {{ template "_internal/google_analytics_async.html" . }}
+  {{ end }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ if .Site.Params.twitterCards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
+
+  {{ $style := "" }}
+  {{ if .Site.IsServer }}
+    {{ $style = resources.Get "scss/style.scss" | resources.ToCSS (dict "targetPath" "css/style.css" "enableSourceMap" true ) }}
+  {{ else }}
+    {{ $style = resources.Get "scss/style.scss" | resources.ToCSS (dict "targetPath" "css/style.css" "enableSourceMap" false )| resources.Minify | resources.Fingerprint }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  {{ with .OutputFormats.Get "rss" }}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+  {{ end }}
+
+  {{ range .Site.Params.customCSS }}
+    <link rel="stylesheet" href="{{ . | relURL }}">
+  {{ end }}
+</head>

@@ -1,0 +1,33 @@
+
+{{ define "main" }}
+<main class="l-main">
+  <article>
+    <div class="p-post">
+      <div class="p-post__date">
+        <i class="far fa-clock"></i>
+        {{ .Date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}
+      </div>
+
+      <div class="p-post__title">
+        <h1>{{ .Title }}</h1>
+      </div>
+
+      {{ partial "post_meta.html" . }}
+
+      {{ with .Params.thumbnail }}
+        <div class="p-post__thumbnail" style="background-image: url({{ . }})">
+        </div>
+      {{ end }}
+
+      <div class="p-post__content">
+        {{ .Content }}
+      </div>
+    </div>
+
+    {{ if .Site.Params.releted }}
+      {{ partial "related.html" . }}
+    {{ end }}
+
+  </article>
+</main>
+{{ end }}

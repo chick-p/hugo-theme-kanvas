@@ -1,0 +1,121 @@
+// _post.scss
+
+.p-post {
+  font-size: 1em;
+  overflow: hidden;
+  word-wrap: break-word;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  a {
+    &:hover {
+      color: $primary;
+    }
+  }
+
+}
+
+.p-post__title {
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 2em;
+}
+
+.p-post__date {
+  margin-top: 20px;
+}
+
+.p-post__content {
+  margin: 1.17em 0 1.17em;
+
+  .highlight {
+    margin: 10px 0 10px;
+  }
+
+  h1 {
+    font-size: 1.75em;
+    line-height: 1.75em;
+    margin-top: 0.1em;
+  }
+  h2 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0.5em 0 0.1em;
+  }
+  h3 {
+    font-size: 1.17em;
+    line-height: 1.17em;
+    margin: 0.25em 0 0.1em;
+  }
+  h4 {
+    font-size: 1em;
+    line-height: 1em;
+    margin: 0.1em 0 0.1em;
+  }
+  h5, h6 {
+    margin: 0.1em 0 0.1em;
+  }
+  p {
+    line-height: 1.25em;
+  }
+  p + p {
+    margin-top: 0.5em 0;
+  }
+  pre {
+    padding: 0.75em 0.25em;
+  }
+  table {
+    margin: 0.5em 0 0.5em;
+  }
+  th, td {
+    padding: 5px;
+  }
+  thead > tr {
+    background-color: $success;
+  }
+  ul, ol {
+    margin: 0.5em 0 0.5em 1.5em;
+  }
+  li {
+    line-height: 1.5em;
+  }
+  blockquote {
+    display: block;
+    padding: 5px 0 5px 15px;
+    margin: 1.17em 0 1.17em;
+    line-height: 1.5em;
+    border-left: 5px solid $primary;
+  }
+  code {padding: .2em;
+    margin: 0;
+    font-size: 85%;
+    border-radius: 3px;
+    background-color: $light-grey;
+  }
+}
+
+.p-post__meta {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    i {
+      margin-right: 5px;
+    }
+    li {
+      vertical-align: middle;
+      position: relative;
+      display: inline-block;
+      margin: 0 .5em .5em 0;
+      padding: 0;
+    }
+  }
+}
+
+.p-post__thumbnail {
+  margin-left: 0;
+  max-width: 500px;
+  height: 250px;
+  background-size: cover;
+}

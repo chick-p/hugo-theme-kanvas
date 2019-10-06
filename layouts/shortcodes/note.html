@@ -1,0 +1,19 @@
+
+<div class="c-note">
+  <div class="c-note__mark">
+    {{ with .Get "type" }}
+      {{ if eq . "information" }}
+        <i class="fa fa-info-circle" title="INFOMATION"></i>
+      {{ else if eq .  "tips" }}
+        <i class="fas fa-lightbulb" title="TIPS"></i>
+      {{ else if eq . "warning" }}
+        <i class="fas fa-exclamation-triangle"></i>
+      {{ end }}
+    {{ else }}
+      {{ errorf "missing value for param 'type': %s" .Position }}
+    {{ end }}
+  </div>
+  <div class="c-note__text">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

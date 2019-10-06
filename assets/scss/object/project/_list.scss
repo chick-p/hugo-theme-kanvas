@@ -1,0 +1,46 @@
+//_list.scss
+
+.p-list__item {
+  margin-top: 2em;
+  margin-bottom: 1em;
+
+  height: 200px;
+  @include tablet {
+    height: auto;
+  }
+
+  &:hover {
+    text-decoration: none;
+    background-color: $light-grey;
+    transition: all 0.3s linear 0s;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $base-color;
+    }
+    &:active {
+      color: $base-color;
+    }
+  }
+}
+.p-list__thumbnail {
+  @include tablet {
+    display: none;
+  }
+  width: 250px;
+  height: 200px;
+  background-size: cover;
+  margin: 0px;
+  float: left;
+}
+
+.p-list__content {
+  position: relative;
+  height: 100%;
+  padding: 20px;
+  margin-right: 0;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

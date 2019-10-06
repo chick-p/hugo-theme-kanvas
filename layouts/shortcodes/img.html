@@ -1,0 +1,16 @@
+{{ $page := . }}
+{{ if not (.Get "src") }}
+  {{ errorf "missing value for param 'src': %s" .Position }}
+{{ end }}
+
+{{ $img := .Page.Resources.GetMatch (.Get "src") }}
+
+<figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
+  {{ with .Get "link" }}<a href="{{ . }}">{{ end }}
+    <img
+      src="{{ with $img }}{{ .RelPermalink }}{{ else }}{{ .Get "src" }}{{ end }}"
+      {{ with .Get "width" }}width="{{ . }}"{{ end }}
+      {{ with .Get "height" }}height="{{ . }}"{{ end }}
+      {{ with .Get "alt" }}alt="{{ . }}"{{ end }} />
+  {{ if .Get "link" }}</a>{{ end }}
+</figure>

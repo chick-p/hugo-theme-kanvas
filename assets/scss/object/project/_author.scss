@@ -1,0 +1,15 @@
+// _author.scss
+
+.p-author__social {
+  margin: 0.5em 0;
+  font-size: 2em;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

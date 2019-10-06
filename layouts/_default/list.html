@@ -1,0 +1,37 @@
+
+{{ define "main" }}
+<main class="l-main">
+  <h1>
+    {{ if .IsHome }}
+      Recently posts
+    {{ else }}
+      {{ with .Title }}
+        {{ . }}
+      {{ end }}
+    {{ end }}
+  </h1>
+  <section>
+    {{ range .Paginator.Pages.ByDate.Reverse }}
+      {{ $thumbnail :=  .Site.Params.defaultThumbnail }}
+      {{ if .Params.thumbnail }}
+        {{ $thumbnail =  print .Permalink  .Params.thumbnail }}
+      {{ end }}
+      <div class="p-list__item">
+        <a href="{{ .Permalink }}">
+          <figure class="p-list__thumbnail" style="background-image: url({{ $thumbnail }})">
+          </figure>
+          <div class="p-list__content">
+              <i class="far fa-clock"></i>
+              {{ .Date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}
+              <h1>{{ .Title }}</h1>
+              {{ .Summary | plainify | truncate 100 }}
+          </div>
+        </a>
+      </div>
+    {{ end }}
+  </section>
+  <nav id="pagenation">
+    {{ template "_internal/pagination.html" . }}
+  </nav>
+</main>
+{{ end }}

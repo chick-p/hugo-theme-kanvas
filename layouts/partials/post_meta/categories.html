@@ -1,0 +1,15 @@
+
+{{ with .Params.categories }}
+<div class="p-post__meta categories">
+  <ul>
+    <i class="fas fa-folder"></i>
+    {{ range . }}
+    <li>
+      <a href="{{ "categories/" | relLangURL }}{{ . | urlize }}/" rel="tag">
+        {{ . }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
