@@ -15,14 +15,18 @@
   word-wrap: break-word;
   height: auto;
 
-  a {
-    text-decoration: none;
-  }
   &:hover {
     background-color: $light-grey;
     transition: all 0.3s linear 0s;
   }
-  &:active {
-    color: $base-color;
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: $base-color;
+    }
+    &:active {
+      color: $base-color;
+    }
   }
 }

@@ -527,13 +527,7 @@ a {
       color: #5cc6cc; }
 
 .p-related {
-  margin-top: 1em; }
-  .p-related a {
-    text-decoration: none; }
-    .p-related a:hover {
-      color: #333; }
-    .p-related a:active {
-      color: #333; }
+  margin-top: 2em; }
 
 .p-related__title {
   line-height: 2em;
@@ -547,6 +541,12 @@ a {
   .p-related__item:hover {
     background-color: rgba(0, 0, 0, 0.1);
     transition: all 0.3s linear 0s; }
+  .p-related__item a {
+    text-decoration: none; }
+    .p-related__item a:hover {
+      color: #333; }
+    .p-related__item a:active {
+      color: #333; }
 
 #pagenation {
   text-align: center;
