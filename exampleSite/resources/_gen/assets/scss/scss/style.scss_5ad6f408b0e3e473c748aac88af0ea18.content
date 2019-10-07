@@ -283,6 +283,9 @@ a {
   a:active {
     color: #333; }
 
+pre, code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
 .l-footer {
   margin: 0; }
 
