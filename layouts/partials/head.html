@@ -32,4 +32,9 @@
   {{ range .Site.Params.customCSS }}
     <link rel="stylesheet" href="{{ . | relURL }}">
   {{ end }}
+  {{ range $index, $value := .Site.Params.customSCSS }}
+    {{ $targetPath := print "css/" $index ".css" }}
+    {{ $style = resources.Get ( $value  | relURL) | resources.ToCSS (dict "targetPath" $targetPath "enableSourceMap" true ) }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{ end }}
 </head>

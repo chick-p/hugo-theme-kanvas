@@ -47,6 +47,7 @@ pygmentsoptions = "linenos=inline"
   releted = true
   twitterCards = true
   customCSS = []
+  customSCSS = []
   images = ["defaultThumbnail.png"]
   description = "Kanvas is a simple blog theme for Hugo."
 
