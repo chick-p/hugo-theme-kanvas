@@ -18,6 +18,10 @@
   font-weight: 800;
   margin: 10px 0;
   line-height: 2em;
+
+  @include tablet {
+    font-size: 1.25em;
+  }
 }
 
 .p-post__content {
@@ -81,10 +85,14 @@
     line-height: 1.5em;
     border-left: 5px solid $primary;
   }
+  .highlight {
+    width: 100vw;
+  }
   pre {
+    overflow: scroll;
+    word-wrap: normal;
     line-height: 1.5em;
     padding: 0.75em 0.25em;
-    overflow: auto;
   }
   code {
     padding: .2em;
@@ -98,6 +106,10 @@
     background-color: transparent;
     font-size: 1em;
     border-radius: 0px;
+  }
+  figure > img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -124,12 +136,14 @@
   margin-left: 0;
   max-width: 500px;
   max-height: 250px;
-  background-size: cover;
-  background-position: center;
 
   img {
     width: auto;
     max-width: 500px;
     max-height: 250px;
+    @include tablet {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
