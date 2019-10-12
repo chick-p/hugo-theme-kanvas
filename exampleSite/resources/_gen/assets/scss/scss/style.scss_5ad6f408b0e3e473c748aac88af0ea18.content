@@ -364,11 +364,17 @@ pre, code {
 
 .l-main {
   margin: 0 30px;
-  padding: 60px 60px; }
+  padding: 20px 60px; }
   @media only screen and (max-width: 768px) {
     .l-main {
       margin: 0 20px;
       padding: 20px; } }
+  @media only screen and (max-width: 480px) {
+    .l-main {
+      margin: 0 10px;
+      padding: 10px; } }
+  .l-main > h1 {
+    font-size: 1.75em; }
 
 .l-main__warning {
   padding: 20px 10px;
@@ -438,18 +444,15 @@ pre, code {
   font-size: 1em;
   overflow: hidden;
   word-wrap: break-word;
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding: 0 10px; }
   .p-post a:hover {
     color: #5cc6cc; }
 
 .p-post__title {
   font-size: 1.5em;
   font-weight: 800;
+  margin: 10px 0;
   line-height: 2em; }
-
-.p-post__date {
-  margin-top: 20px; }
 
 .p-post__content {
   margin: 1.17em 0 1.17em; }
