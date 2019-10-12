@@ -1,12 +1,24 @@
 // _pagenation.scss
-#pagenation {
+
+.p-pagination {
+  font-size: 1em;
   text-align: center;
-  margin: 0.5em 0;
-}
-.pagination {
-  list-style-type: none;
-  .page-item {
+  margin: 0.5em 0 0;
+  ul {
+    list-style-type: none;
+  }
+  li {
     display: inline-block;
     padding: 0 0.5em;
+    .disabled {
+      text-decoration: none;
+      cursor: text;
+      pointer-events: none;
+    }
+  }
+  a {
+    &:hover {
+      color: $primary;
+    }
   }
 }

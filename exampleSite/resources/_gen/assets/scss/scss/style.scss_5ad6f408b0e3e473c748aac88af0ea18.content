@@ -567,14 +567,20 @@ pre, code {
     .p-related__item a:active {
       color: #333; }
 
-#pagenation {
+.p-pagination {
+  font-size: 1em;
   text-align: center;
-  margin: 0.5em 0; }
-
-.pagination {
-  list-style-type: none; }
-  .pagination .page-item {
+  margin: 0.5em 0 0; }
+  .p-pagination ul {
+    list-style-type: none; }
+  .p-pagination li {
     display: inline-block;
     padding: 0 0.5em; }
+    .p-pagination li .disabled {
+      text-decoration: none;
+      cursor: text;
+      pointer-events: none; }
+  .p-pagination a:hover {
+    color: #5cc6cc; }
 
 /*# sourceMappingURL=style.css.map */

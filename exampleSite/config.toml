@@ -1,6 +1,6 @@
 baseURL = "https://hugo-theme-kanvas.netlify.com/"
 title = "HUGO Theme Kanvas"
-paginate = 10
+paginate = 3
 languageCode = "ja"
 themesDir = "../.."
 theme = "hugo-theme-kanvas"
