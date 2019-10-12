@@ -15,7 +15,8 @@
       {{ partial "post_meta.html" . }}
 
       {{ with .Params.thumbnail }}
-        <div class="p-post__thumbnail" style="background-image: url({{ . }})">
+        <div class="p-post__thumbnail">
+          <img src="{{ . }}">
         </div>
       {{ end }}
 
