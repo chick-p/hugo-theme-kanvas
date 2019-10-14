@@ -499,6 +499,8 @@ pre, code {
     border-left: 5px solid #5cc6cc; }
   .p-post__content .highlight {
     width: 100vw; }
+    .p-post__content .highlight tr > td:nth-of-type(2) {
+      width: 100%; }
   .p-post__content pre {
     overflow: scroll;
     word-wrap: normal;

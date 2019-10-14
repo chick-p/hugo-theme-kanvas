@@ -87,6 +87,10 @@
   }
   .highlight {
     width: 100vw;
+
+    tr > td:nth-of-type(2) {
+      width: 100%;
+    }
   }
   pre {
     overflow: scroll;
