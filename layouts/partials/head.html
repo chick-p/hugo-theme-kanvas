@@ -5,36 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ hugo.Generator }}
   <title>
-    {{ if .IsHome }}{{ .Site.Title }}
-    {{ else }}{{ block "title" . }}{{ .Title }}{{ end }} | {{ .Site.Title }}
-    {{ end }}
+    {{- if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title -}}
   </title>
 
-  {{ if not .Site.IsServer }}
-    {{ template "_internal/google_analytics_async.html" . }}
-  {{ end }}
-  {{ template "_internal/opengraph.html" . }}
-  {{ if .Site.Params.twitterCards }}{{ partial "twitter_cards.html" . }}{{ end }}
-
+  {{- if not .Site.IsServer }}
+    {{- template "_internal/google_analytics_async.html" . -}}
+  {{ end -}}
+  {{- template "_internal/opengraph.html" . -}}
+  {{- if .Site.Params.twitterCards }}{{ partial "twitter_cards.html" . }}{{ end -}}
   {{ $style := "" }}
   {{ if .Site.IsServer }}
-    {{ $style = resources.Get "scss/style.scss" | resources.ToCSS (dict "targetPath" "css/style.css" "enableSourceMap" true ) }}
+    {{- $style = resources.Get "scss/style.scss" | resources.ToCSS (dict "targetPath" "css/style.css" "enableSourceMap" true ) -}}
   {{ else }}
-    {{ $style = resources.Get "scss/style.scss" | resources.ToCSS (dict "targetPath" "css/style.css" "enableSourceMap" false )| resources.Minify | resources.Fingerprint }}
+    {{- $style = resources.Get "scss/style.scss" | resources.ToCSS (dict "targetPath" "css/style.css" "enableSourceMap" false )| resources.Minify | resources.Fingerprint -}}
   {{ end }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
   {{ with .OutputFormats.Get "rss" }}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+    {{- printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML -}}
   {{ end }}
-
-  {{ range .Site.Params.customCSS }}
+  {{- range .Site.Params.customCSS -}}
     <link rel="stylesheet" href="{{ . | relURL }}">
-  {{ end }}
+  {{- end -}}
   {{ range $index, $value := .Site.Params.customSCSS }}
     {{ $targetPath := print "css/" $index ".css" }}
-    {{ $style = resources.Get ( $value  | relURL) | resources.ToCSS (dict "targetPath" $targetPath "enableSourceMap" true ) }}
+    {{- $style = resources.Get ( $value  | relURL) | resources.ToCSS (dict "targetPath" $targetPath "enableSourceMap" true ) -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
   {{ end }}
 </head>

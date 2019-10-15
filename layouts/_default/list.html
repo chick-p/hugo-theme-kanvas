@@ -1,17 +1,17 @@
 
-{{ define "main" }}
+{{- define "main" -}}
 <main class="l-main">
   <h1>
-    {{ if .IsHome }}
+    {{- if .IsHome -}}
       Recently posts
-    {{ else }}
+    {{- else -}}
       {{ with .Title }}
         {{ . }}
       {{ end }}
-    {{ end }}
+    {{- end -}}
   </h1>
   <section>
-    {{ range .Paginator.Pages.ByDate.Reverse }}
+    {{- range .Paginator.Pages.ByDate.Reverse -}}
       {{ $thumbnail :=  .Site.Params.defaultThumbnail }}
       {{ if .Params.thumbnail }}
         {{ $thumbnail =  print .Permalink  .Params.thumbnail }}
@@ -28,7 +28,7 @@
           </div>
         </a>
       </div>
-    {{ end }}
+    {{- end -}}
   </section>
   <nav id="pagenation">
     {{ partial "pagination.html" . }}

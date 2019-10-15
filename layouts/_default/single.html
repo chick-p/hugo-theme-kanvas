@@ -1,15 +1,14 @@
 
-{{ define "main" }}
+{{ define "main" -}}
 <main class="l-main">
   <article>
     <div class="p-post">
       <div class="p-post__date">
         <i class="far fa-clock"></i>
-        {{ .Date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}
+        {{- .Date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") -}}
       </div>
-
       <div class="p-post__title">
-        <h1>{{ .Title }}</h1>
+        <h1>{{- .Title -}}</h1>
       </div>
 
       {{ partial "post_meta.html" . }}

@@ -1,7 +1,7 @@
 <nav>
-{{ $root := . }}
-{{ with .Param "postMeta" }}
-  {{ range $field := . }}
+{{- $root := . }}
+{{- with .Param "postMeta" }}
+  {{- range $field := . }}
     {{ $p := printf "post_meta/%s.html" $field }}
     {{ partial $p $root }}
   {{ end }}
