@@ -23,7 +23,6 @@
       <div class="p-post__content">
         {{ .Content }}
       </div>
-    </div>
 
     {{- if .Site.Params.addThis -}}
       {{ partial "addthis.html" . }}
@@ -32,6 +31,7 @@
     {{ if .Site.Params.releted }}
       {{ partial "related.html" . }}
     {{ end }}
+  </div>
 
   </article>
 </main>
