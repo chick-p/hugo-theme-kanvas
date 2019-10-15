@@ -455,6 +455,9 @@ pre, code {
 
 .p-post__content {
   margin: 1.17em 0 1.17em; }
+  .p-post__content .footnotes {
+    font-size: 0.85em;
+    margin: 2em 0 0 0; }
   .p-post__content .highlight {
     margin: 10px 0 10px; }
   .p-post__content h1 {
