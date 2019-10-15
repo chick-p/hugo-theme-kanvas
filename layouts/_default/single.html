@@ -25,6 +25,10 @@
       </div>
     </div>
 
+    {{- if .Site.Params.addThis -}}
+      {{ partial "addthis.html" . }}
+    {{- end -}}
+
     {{ if .Site.Params.releted }}
       {{ partial "related.html" . }}
     {{ end }}
