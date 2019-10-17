@@ -1,7 +1,7 @@
 // _post.scss
 
 .p-post {
-  font-size: 1em;
+  font-size: 1rem;
   overflow: hidden;
   word-wrap: break-word;
   padding: 0 10px;
@@ -14,22 +14,22 @@
 }
 
 .p-post__title {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 800;
   margin: 10px 0;
-  line-height: 2em;
+  line-height: 2.5rem;
 
   @include tablet {
-    font-size: 1.25em;
+    font-size: 1.25rem;
   }
 }
 
 .p-post__content {
-  margin: 1.17em 0 1.17em;
+  margin: 1.17rem 0 1.17rem;
 
   .footnotes {
-    font-size: 0.85em;
-    margin: 2em 0 0 0;
+    font-size: 0.85rem;
+    margin: 2rem 0 0 0;
   }
 
   .highlight {
@@ -37,60 +37,60 @@
   }
 
   h1 {
-    font-size: 1.75em;
-    line-height: 1.75em;
-    margin-top: 0.5em;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    margin-top: 0.5rem;
   }
   h2 {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    margin: 1em 0 0.5em;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 1rem 0 0.5rem;
   }
   h3 {
-    font-size: 1.17em;
-    line-height: 1.17em;
-    margin: 1em 0 0.5em;
+    font-size: 1.17rem;
+    line-height: 1.5rem;
+    margin: 1rem 0 0.5rem;
   }
   h4 {
-    font-size: 1em;
-    line-height: 1em;
-    margin: 1em 0 0.5em;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 1rem 0 0.5rem;
   }
   h5, h6 {
-    margin: 1em 0 0.5em;
+    margin: 1rem 0 0.5rem;
   }
   p {
-    line-height: 1.75em;
+    line-height: 1.75rem;
   }
   p + p {
-    margin: 1em 0;
+    margin: 1rem 0;
   }
   dl {
-    line-height: 1.75em;
+    line-height: 1.75rem;
   }
   table {
-    margin: 0.5em 0 0.5em;
+    margin: 0.5rem 0 0.5rem;
   }
   th, td {
-    padding: 0.5em;
+    padding: 0.5rem;
   }
   thead > tr {
     background-color: $success;
   }
   ul, ol {
-    margin: 0em 0 0em 1.5em;
+    margin: 0 0 0 1.5rem;
   }
   p + ul, p + ol {
-    margin-top: 1em;
+    margin-top: 1rem;
   }
   li {
-    line-height: 2em;
+    line-height: 2rem;
   }
   blockquote {
     display: block;
     padding: 5px 0 5px 15px;
-    margin: 1.17em 0 1.17em;
-    line-height: 1.5em;
+    margin: 1.17rem 0 1.17rem;
+    line-height: 1.5rem;
     border-left: 5px solid $primary;
   }
   .highlight {
@@ -103,20 +103,20 @@
   pre {
     overflow: scroll;
     word-wrap: normal;
-    line-height: 1.5em;
-    padding: 0.75em 0.25em;
+    line-height: 1.5rem;
+    padding: 0.75rem 0.25rem;
   }
   code {
-    padding: .2em;
+    padding: .2rem;
     margin: 0;
     font-size: 85%;
     border-radius: 3px;
     background-color: $light-grey;
   }
   pre > code {
-    padding: 0em;
+    padding: 0;
     background-color: transparent;
-    font-size: 1em;
+    font-size: 1rem;
     border-radius: 0px;
   }
   figure > img {
@@ -138,7 +138,7 @@
       vertical-align: middle;
       position: relative;
       display: inline-block;
-      margin: 0 .5em .5em 0;
+      margin: 0 .5rem .5rem 0;
       padding: 0;
     }
   }
