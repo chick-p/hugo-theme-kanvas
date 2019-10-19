@@ -1,47 +1,53 @@
 //_list.scss
+.p-list {
+  &__item {
+    height: 200px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
-.p-list__item {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+    @include tablet {
+      height: auto;
+    }
 
-  height: 200px;
-  @include tablet {
-    height: auto;
-  }
-
-  &:hover {
-    text-decoration: none;
-    background-color: $light-grey;
-    transition: all 0.3s linear 0s;
-  }
-  a {
-    text-decoration: none;
     &:hover {
-      color: $base-color;
+      text-decoration: none;
+      background-color: $light-grey;
+      transition: all 0.3s linear 0s;
     }
-    &:active {
-      color: $base-color;
-    }
-  }
-}
-.p-list__thumbnail {
-  @include tablet {
-    display: none;
-  }
-  width: 250px;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  margin: 0px;
-  float: left;
-}
 
-.p-list__content {
-  position: relative;
-  height: 100%;
-  padding: 20px;
-  margin-right: 0;
-  overflow: hidden;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: $base-color;
+      }
+
+      &:active {
+        color: $base-color;
+      }
+    }
+  }
+
+  &__thumbnail {
+    @include tablet {
+      display: none;
+    }
+
+    float: left;
+    width: 250px;
+    height: 200px;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__content {
+    position: relative;
+    height: 100%;
+    padding: 20px;
+    margin-right: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 }

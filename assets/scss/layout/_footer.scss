@@ -2,11 +2,10 @@
 
 .l-footer {
   margin: 0;
-}
 
-.l-footer__copyright {
-  padding: 10px 25px;
-  background-color: #eee;
-  text-align: center;
+  &__copyright {
+    padding: 10px 25px;
+    text-align: center;
+    background-color: #eee;
+  }
 }
-

@@ -1,16 +1,17 @@
 // _author.scss
+.p-author {
+  &__social {
+    margin: 0 0 0.75rem 0;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
 
-.p-author__social {
-  margin: 0 0 0.75rem 0;
-  font-size: 2rem;
-  letter-spacing: 0.5rem;
-  text-align: center;
+    a {
+      text-decoration: none;
 
-  a {
-    text-decoration: none;
-
-    &:hover {
-      color: $primary;
+      &:hover {
+        color: $primary;
+      }
     }
   }
 }

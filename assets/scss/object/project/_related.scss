@@ -2,31 +2,33 @@
 
 .p-related {
   margin-top: 2rem;
-}
 
-.p-related__title {
-  line-height: 2.5rem;
-}
-
-.p-related__item {
-  margin: 0 -2rem;
-  padding: 1rem 2rem;
-  overflow: hidden;
-  word-wrap: break-word;
-  height: auto;
-
-  &:hover {
-    background-color: $light-grey;
-    transition: all 0.3s linear 0s;
+  &__title {
+    line-height: 2.5rem;
   }
-  a {
-    text-decoration: none;
+
+  &__item {
+    height: auto;
+    padding: 1rem 2rem;
+    margin: 0 -2rem;
+    overflow: hidden;
+    word-wrap: break-word;
 
     &:hover {
-      color: $base-color;
+      background-color: $light-grey;
+      transition: all 0.3s linear 0s;
     }
-    &:active {
-      color: $base-color;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: $base-color;
+      }
+
+      &:active {
+        color: $base-color;
+      }
     }
   }
 }

@@ -1,26 +1,27 @@
 // _note.scss
 
 .c-note {
-  border-radius: 5px;
-  background-color: $block-color;
   width: 100%;
   padding: 1rem;
   margin: 0.5rem 0;
   line-height: 1rem;
-}
+  background-color: $block-color;
+  border-radius: 5px;
 
-.c-note__mark {
-  vertical-align: top;
-  display: inline-block;
-  padding: 0 0.5rem;
-  i {
-    font-size: 2rem;
+  &__mark {
+    display: inline-block;
+    padding: 0 0.5rem;
+    vertical-align: top;
+
+    i {
+      font-size: 2rem;
+    }
   }
-}
 
-.c-note__text {
-  vertical-align: top;
-  display: inline-block;
-  padding: 0 0.5rem;
-  line-height: 2rem;
+  &__text {
+    display: inline-block;
+    padding: 0 0.5rem;
+    line-height: 2rem;
+    vertical-align: top;
+  }
 }

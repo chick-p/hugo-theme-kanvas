@@ -2,10 +2,11 @@
 html {
   font-size: 14px;
 }
+
 body {
-  font-family: Quicksand, 'M PLUS Rounded 1c', 'Noto Sans JP';
-  color: $base-color;
+  font-family: Quicksand, "M PLUS Rounded 1c", "Noto Sans JP", "sans-seri", monospace;
   font-size: 1rem;
+  color: $base-color;
 }
 
 a {
@@ -15,14 +16,17 @@ a {
   &:hover {
     color: $primary;
   }
+
   &:visited {
     color: $base-color;
   }
+
   &:active {
     color: $base-color;
   }
 }
 
-pre, code {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+pre,
+code {
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }

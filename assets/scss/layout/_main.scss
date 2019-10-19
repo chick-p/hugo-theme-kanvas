@@ -1,21 +1,21 @@
 // _main.scss
 
 .l-main {
-  margin: 0 30px;
   padding: 20px 60px;
+  margin: 0 30px;
 
   @include tablet {
-    margin: 0 5px;
     padding: 10px 5px;
-  };
+    margin: 0 5px;
+  }
 
   > h1 {
     font-size: 1.75rem;
   }
-}
 
-.l-main__warning {
-  padding: 20px 10px;
-  text-align: center;
-  border: 1px solid $light-grey;
+  &__warning {
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid $light-grey;
+  }
 }
