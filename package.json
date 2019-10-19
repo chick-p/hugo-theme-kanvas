@@ -1,0 +1,25 @@
+{
+  "name": "hugo-theme-kanvas",
+  "version": "0.0.1",
+  "description": "Kanvas is a simple blog theme for Hugo.",
+  "scripts": {
+    "stylelint": "stylelint assets/scss/*.scss assets/scss/*/*.scss assets/scss/*/*/*.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chick-p/hugo-theme-kanvas.git"
+  },
+  "keywords": [
+    "hugo"
+  ],
+  "author": "chick-p",
+  "license": "MIT",
+  "homepage": "https://github.com/chick-p/hugo-theme-kanvas#readme",
+  "devDependencies": {
+    "stylelint": "^11.1.1",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-scss": "^3.11.1"
+  },
+  "dependencies": {}
+}
