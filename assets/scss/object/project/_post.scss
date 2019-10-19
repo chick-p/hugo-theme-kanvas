@@ -1,7 +1,7 @@
 // _post.scss
 
 .p-post {
-  padding: 0 10px;
+  padding: 0 12px;
   overflow: hidden;
   font-size: 1rem;
   word-wrap: break-word;
@@ -13,10 +13,10 @@
   }
 
   &__title {
-    margin: 10px 0;
-    font-size: 1.5rem;
+    margin: 0.833em 0;
+    font-size: $h1-font-size;
     font-weight: 800;
-    line-height: 2.5rem;
+    line-height: $h-line-height;
 
     @include tablet {
       font-size: 1.25rem;
@@ -55,7 +55,7 @@
 
     .highlight {
       width: 100vw;
-      margin: 10px 0 10px;
+      margin: 12px 0 12px;
 
       tr > td:nth-of-type(2) {
         width: 100%;
@@ -63,32 +63,30 @@
     }
 
     h1 {
-      margin-top: 0.5rem;
-      font-size: 1.75rem;
-      line-height: 2rem;
+      margin: $h-margin-size;
     }
 
     h2 {
-      margin: 1rem 0 0.5rem;
-      font-size: 1.5rem;
-      line-height: 2rem;
+      margin: $h-margin-size;
     }
 
     h3 {
-      margin: 1rem 0 0.5rem;
-      font-size: 1.17rem;
-      line-height: 1.5rem;
+      margin: $h-margin-size;
     }
 
     h4 {
-      margin: 1rem 0 0.5rem;
-      font-size: 1rem;
-      line-height: 1.25rem;
+      margin: $h-margin-size;
     }
 
     h5,
     h6 {
-      margin: 1rem 0 0.5rem;
+      margin: $h-margin-size;
+    }
+
+    h1 + h2,
+    h2 + h3,
+    h3 + h4 {
+      margin-top: 0;
     }
 
     p {

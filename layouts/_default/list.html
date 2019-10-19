@@ -1,15 +1,10 @@
 
 {{ define "main" }}
 <main class="l-main">
-  <h1>
-    {{ if .IsHome }}
-      Recently posts
-    {{ else }}
-      {{ with .Title }}
-        {{ . }}
-      {{ end }}
-    {{ end }}
-  </h1>
+  <div class="p-list__title">
+    <h2>{{ if .IsHome }}Recently posts{{ else }}
+      {{ with .Title }}{{ . }}{{ end }}{{ end }}</h2>
+    </div>
   <section>
     {{ range .Paginator.Pages.ByDate.Reverse }}
       {{ $thumbnail :=  .Site.Params.defaultThumbnail }}
@@ -23,7 +18,7 @@
           <div class="p-list__content">
               <i class="far fa-clock"></i>
               {{ .Date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}
-              <h1>{{ .Title }}</h1>
+              <h3>{{ .Title }}</h3>
               {{ .Summary | plainify | truncate 100 }}
           </div>
         </a>

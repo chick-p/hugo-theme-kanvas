@@ -7,6 +7,27 @@ body {
   font-family: Quicksand, "M PLUS Rounded 1c", "Noto Sans JP", "sans-seri", monospace;
   font-size: 1rem;
   color: $base-color;
+  background-color: $white;
+
+  h1 {
+    font-size: $h1-font-size;
+    line-height: $h-line-height;
+  }
+
+  h2 {
+    font-size: $h2-font-size;
+    line-height: $h-line-height;
+  }
+
+  h3 {
+    font-size: $h3-font-size;
+    line-height: $h-line-height;
+  }
+
+  h4 {
+    font-size: $h4-font-size;
+    line-height: $h-line-height;
+  }
 }
 
 a {
