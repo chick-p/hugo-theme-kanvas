@@ -48,11 +48,6 @@
       font-size: 0.85rem;
     }
 
-    th,
-    td {
-      padding: 0.5rem;
-    }
-
     .highlight {
       width: 100vw;
       margin: 12px 0 12px;
@@ -103,10 +98,24 @@
 
     table {
       margin: 0.5rem 0 0.5rem;
+      border-spacing: 0;
     }
 
     thead > tr {
       background-color: $success;
+    }
+
+    th {
+      padding: 0.5rem;
+    }
+
+    td { /* stylelint-disable-line no-descending-specificity */
+      padding: 0.2rem 0.5rem;
+    }
+
+    table th:nth-of-type(n + 2),
+    table td:nth-of-type(n + 2) { /* stylelint-disable-line no-descending-specificity */
+      border-left: 1px solid $grey;
     }
 
     ul,
