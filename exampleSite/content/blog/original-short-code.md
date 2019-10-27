@@ -7,6 +7,8 @@ categories:
 tags:
   - "hugo"
   - "development"
+series:
+  - "HUGO Customize"
 ---
 
 ## note

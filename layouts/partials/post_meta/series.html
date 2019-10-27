@@ -1,0 +1,12 @@
+{{- with .Params.series -}}
+<div class="p-post__meta series">
+  <ul>
+    <i class="far fa-newspaper"></i>
+    {{ range . }}
+    <li>
+      <a href="{{ "series/" | relLangURL }}{{ . | urlize }}/" rel="tag">{{- . -}}</a>
+    </li>
+    {{- end -}}
+  </ul>
+</div>
+{{- end -}}

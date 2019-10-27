@@ -42,7 +42,7 @@ pygmentsoptions = "linenos=inline"
   title = "HUGO Theme Kanvas"
   dateformat = "2006年01月02日"
   copyright = "Copyright 2019, chick-p and the Hugo Authors; all rights reserved."
-  postMeta = ["categories", "tags"]
+  postMeta = ["series", "categories", "tags"]
   defaultThumbnail = "/defaultThumbnail.png"
   releted = true
   twitterCards = true
