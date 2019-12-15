@@ -276,16 +276,16 @@ body {
   background-color: #fdfdfd; }
   body h1 {
     font-size: 2.074rem;
-    line-height: 1.2; }
+    line-height: 1.5; }
   body h2 {
     font-size: 1.728rem;
-    line-height: 1.2; }
+    line-height: 1.5; }
   body h3 {
     font-size: 1.44em;
-    line-height: 1.2; }
+    line-height: 1.5; }
   body h4 {
     font-size: 1.2rem;
-    line-height: 1.2; }
+    line-height: 1.5; }
 
 a {
   color: #333;
@@ -322,7 +322,7 @@ code {
   .l-header__title {
     font-size: 2.074rem;
     font-weight: 700;
-    line-height: 5rem; }
+    line-height: 2.5; }
 
 #menu-background {
   position: fixed;
@@ -357,7 +357,7 @@ code {
     font-family: "Font Awesome 5 Free", monospace;
     font-size: 2rem;
     font-weight: 700;
-    line-height: 5rem;
+    line-height: 2.5;
     color: #333;
     text-align: center;
     content: "\f0c9";
@@ -373,7 +373,8 @@ code {
     margin: 0;
     list-style: none; }
   #menu li {
-    line-height: 2rem; }
+    font-size: 1.44em;
+    line-height: 2; }
 
 .l-main {
   padding: 20px 60px;
@@ -393,7 +394,7 @@ code {
   width: 100%;
   padding: 1rem;
   margin: 0.5rem 0;
-  line-height: 1rem;
+  line-height: 1.2;
   background-color: #bde8ea;
   border-radius: 5px; }
   .c-note__mark {
@@ -405,8 +406,11 @@ code {
   .c-note__text {
     display: inline-block;
     padding: 0 0.5rem;
-    line-height: 2rem;
+    line-height: 1.2;
     vertical-align: top; }
+
+.c-addthis {
+  margin: 2.5rem 0 0 0; }
 
 .p-list__title {
   padding: 0 12px; }
@@ -462,7 +466,7 @@ code {
     margin: 0.833em 0;
     font-size: 2.074rem;
     font-weight: 800;
-    line-height: 1.2; }
+    line-height: 1.5; }
     @media only screen and (max-width: 768px) {
       .p-post__title {
         font-size: 1.25rem; } }
@@ -504,11 +508,11 @@ code {
     .p-post__content h3 + h4 {
       margin-top: 0; }
     .p-post__content p {
-      line-height: 1.75rem; }
+      line-height: 1.5; }
     .p-post__content p + p {
       margin: 1rem 0; }
     .p-post__content dl {
-      line-height: 1.75rem; }
+      line-height: 1.5; }
     .p-post__content table {
       margin: 0.5rem 0 0.5rem;
       border-spacing: 0; }
@@ -530,17 +534,17 @@ code {
     .p-post__content p + ol {
       margin-top: 1rem; }
     .p-post__content li {
-      line-height: 2rem; }
+      line-height: 2; }
     .p-post__content blockquote {
       display: block;
       padding: 5px 0 5px 15px;
       margin: 1.17rem 0 1.17rem;
-      line-height: 1.5rem;
+      line-height: 1.5;
       border-left: 5px solid #5cc6cc; }
     .p-post__content pre {
       padding: 0.75rem 0.25rem;
       overflow: scroll;
-      line-height: 1.5rem;
+      line-height: 1.5;
       word-wrap: normal; }
     .p-post__content code {
       padding: 0.2rem;
@@ -585,7 +589,7 @@ code {
   .p-related h3 {
     margin: 0.24em 0; }
   .p-related__title {
-    line-height: 2.5rem; }
+    line-height: 2; }
   .p-related__item {
     height: auto;
     padding: 1rem 2rem;

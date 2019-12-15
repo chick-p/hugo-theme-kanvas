@@ -4,7 +4,7 @@
   width: 100%;
   padding: 1rem;
   margin: 0.5rem 0;
-  line-height: 1rem;
+  line-height: 1.2;
   background-color: $block-color;
   border-radius: 5px;
 
@@ -21,7 +21,7 @@
   &__text {
     display: inline-block;
     padding: 0 0.5rem;
-    line-height: 2rem;
+    line-height: 1.2;
     vertical-align: top;
   }
 }
