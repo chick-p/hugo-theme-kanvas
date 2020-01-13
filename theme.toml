@@ -5,7 +5,7 @@ description = "Kanvas is a simple blog theme for Hugo."
 homepage = "https://github.com/chick-p/hugo-theme-kanvas/"
 tags = ["blog","responsive","minimal"]
 features = ["blog", "tags"]
-min_version = "0.58"
+min_version = "0.62.2"
 
 [author]
   name = "chick-p"
