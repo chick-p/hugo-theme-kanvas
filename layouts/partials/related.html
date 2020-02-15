@@ -1,10 +1,9 @@
 <aside>
   {{ $related := .Site.RegularPages.RelatedIndices . "tags"  | first 5 }}
-  {{ with $related }}
-
+  {{- with $related -}}
   <div class="p-related">
-    <h2 class="p-related__title"><i class="fas fa-link"></i> Related posts</h2>
-      {{ range . }}
+    <h2 class="p-related__title"><i class="fas fa-link"></i>&nbsp;Related posts</h2>
+      {{- range . -}}
       <div class="p-related__item">
         <a href="{{ .RelPermalink }}">
           <h3>{{ .Title }}</h3>
@@ -15,7 +14,7 @@
           <p>{{ .Summary | plainify | truncate 100 }}</p>
         </a>
       </div>
-      {{ end }}
+      {{- end -}}
   </div>
-  {{ end }}
+  {{- end }}
 </aside>

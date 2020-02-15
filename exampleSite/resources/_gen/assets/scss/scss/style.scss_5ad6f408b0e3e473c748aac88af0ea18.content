@@ -271,6 +271,7 @@ html {
 
 body {
   font-family: Quicksand, "M PLUS Rounded 1c", "Noto Sans JP", "sans-seri", monospace;
+  font-display: swap;
   font-size: 1rem;
   color: #333;
   background-color: #fdfdfd; }
@@ -299,7 +300,8 @@ a {
 
 pre,
 code {
-  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-display: swap; }
 
 .l-footer {
   margin: 0; }
@@ -355,6 +357,7 @@ code {
     display: block;
     width: 50px;
     font-family: "Font Awesome 5 Free", monospace;
+    font-display: swap;
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.5;

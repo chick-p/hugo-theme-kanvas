@@ -3,8 +3,7 @@
   {{ partial "head.html" . }}
   <body>
     {{ partial "header.html" . }}
-    {{ block "main" . }}
-    {{ end }}
+    {{ block "main" . }}{{ end }}
     {{ partial "author.html" . }}
     {{ partial "footer.html" . }}
     {{ partial "after_snippet.html" . }}
