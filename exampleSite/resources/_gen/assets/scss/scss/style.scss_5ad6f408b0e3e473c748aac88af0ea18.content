@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/earlyaccess/notosansjp.css");
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap&subset=japanese");
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
 /*!
  * ress.css • v2.0.1
