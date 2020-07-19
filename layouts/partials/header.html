@@ -4,6 +4,7 @@
       {{ .Site.Title }}
     </a>
   </div>
+  {{ if eq .Site.Params.search true }}{{ partial "search" . }}{{ end }}
   <div id="menu">
     <ul>
       {{ range .Site.Menus.main }}

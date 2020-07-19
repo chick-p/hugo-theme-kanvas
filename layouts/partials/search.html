@@ -1,0 +1,7 @@
+<nav class="p-search">
+  <form action="{{ "/search-result" | relURL }}">
+    <input type="text" name="q" aria-label="search" size="25" class="p-search__input" {{ with .Site.Params.search_placeholder }}placeholder="{{ . }}"{{ end }}>
+    <input type="hidden" value="検索">
+    <button type="submit" class="p-search__button"><i class="fas fa-search"></i></button>
+  </form>
+</nav>
