@@ -447,7 +447,6 @@ code {
   @media only screen and (max-width: 768px) {
     .p-list__thumbnail {
       display: none; } }
-
 .p-list__content {
   position: relative;
   height: 100%;
@@ -625,5 +624,36 @@ code {
       cursor: text; }
   .p-pagination a:hover {
     color: #5cc6cc; }
+
+.p-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px; }
+  @media screen and (max-width: 1024px) {
+    .p-search {
+      display: none; } }
+  .p-search__input {
+    padding: 8px;
+    background-color: #e6e6e6;
+    border-radius: 4px; }
+  .p-search__button {
+    padding: 4px;
+    margin: 0 0 0 4px; }
+
+.search-result__title {
+  font-size: 1.2rem;
+  font-weight: 600; }
+
+.ais-Hits {
+  margin: 20px 0; }
+  .ais-Hits-list {
+    padding: 0 0 0 12px; }
+  .ais-Hits-item {
+    padding: 0 0 16px 8px; }
+
+.ais-Snippet-highlighted {
+  background-color: #e0aab1; }
 
 /*# sourceMappingURL=style.css.map */
