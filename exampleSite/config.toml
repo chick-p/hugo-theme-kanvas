@@ -58,3 +58,7 @@ pygmentsoptions = "linenos=inline"
 
 [outputFormats.rss]
   baseName = "atom"
+
+[markup]
+[markup.goldmark.renderer]
+  unsafe = true
