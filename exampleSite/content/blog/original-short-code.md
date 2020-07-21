@@ -15,19 +15,19 @@ series:
 This shortcode is an admonition paragraph draws the reader's attention.
 
 {{< highlight go "linenos=table" >}}
-{{%/* note type="information" */%}}
+{{</* note type="information" */>}}
 comment
-{{%/* /note */%}}
+{{</* /note */>}}
 {{< /highlight >}}
 
 **Example:**
-{{% note type="information" %}}
+{{< note type="information" >}}
 Here are the built-in admonition types:
 
 - information
 - tips
 - warning
-{{% /note %}}
+{{< /note >}}
 
 ## image
 This shortcode is to show a image file.
