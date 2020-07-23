@@ -9,7 +9,7 @@
     {{ else }}{{ block "title" . }}{{ .Title }}{{ end }} | {{ .Site.Title }}
     {{ end }}
   </title>
-
+  {{ partial "snippedHead.html" . }}
   {{ if not .Site.IsServer }}
     {{ template "_internal/google_analytics_async.html" . }}
   {{ end }}
